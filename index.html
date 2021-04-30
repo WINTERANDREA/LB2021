@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Hello world</h1>
+  <div class="square"></div>
+  <img src="svg/cervello.svg" alt="cervello" style="width: 500px; height: 300px;">
+  <img src="svg/logo header Bianco.svg" alt="header" style="width: 100px">
+
+  <!-- ANIME JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous"></script>
+
+  <!-- GSAP ANIMATION -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script>
+    var elements = document.querySelectorAll('.square');
+
+    anime({
+      targets: elements,
+      translateX: 270,
+      delay: 3000
+    });
+  </script>
+</body>
+
+</html>
